@@ -6,7 +6,7 @@ Vue.use(VueRouter);
 export default new VueRouter({
     routes: [{
         path: '/',
-        name: 'Home',
+        name: 'home',
         component: () =>
             import ('@/components/Home')
     }, {
@@ -14,6 +14,16 @@ export default new VueRouter({
         name: 'leave',
         component: () =>
             import ('@/components/Leave')
+    }, {
+        path: '/article',
+        name: 'article',
+        component: () =>
+            import ('@/components/Article')
+    }, {
+        path: '/carousel',
+        name: 'carousel',
+        component: () =>
+            import ('@/components/Carousel')
     }, {
         path: '/Error',
         name: 'Error',

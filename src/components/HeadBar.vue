@@ -2,7 +2,7 @@
     <div class="content">
         <img src='../assets/main.png' style="width:10%;height:60px;float:left"/>
         <el-menu :default-active="activeIndex" :router="true" class="el-menu" mode="horizontal" >
-        <el-menu-item index="1">首页</el-menu-item>
+        <el-menu-item index="1" :route="{path:'/'}">首页</el-menu-item>
         <el-submenu index="2">
             <template slot="title">个人中心</template>
             <el-menu-item index="/leave">选项1</el-menu-item>
@@ -26,8 +26,8 @@
                 留言板
         </el-menu-item>
         <el-menu-item index="5">关于我</el-menu-item>
-        <el-menu-item index="6">文章书籍</el-menu-item>
-        <el-menu-item index="7">通知公告</el-menu-item>
+        <el-menu-item index="6" :route="{path:'/article'}">文章书籍</el-menu-item>
+        <el-menu-item index="7" :route="{path:'/carousel'}">通知公告</el-menu-item>
         <el-menu-item index="8">关于我</el-menu-item>
     </el-menu>
     </div>

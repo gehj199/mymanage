@@ -1,6 +1,6 @@
 <template>
   <div>
-      首页
+      <span v-for="(item,i) in 5" :key="i">{{item}}</span>
   </div>
 </template>
 

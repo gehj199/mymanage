@@ -5,7 +5,7 @@
             <Headbar />
         </el-header>
         <el-container>
-            <el-aside width="200px" style="background-color: rgb(238, 241, 246)">
+            <el-aside width="200px" >
                 <el-menu :default-openeds="['1']" :router="true">
                 <el-submenu index="1">
                     <template slot="title"><i class="el-icon-message"></i>导航一</template>
