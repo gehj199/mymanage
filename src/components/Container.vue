@@ -1,9 +1,11 @@
 <template>
     <el-container style="height: 500px; border: 1px solid #eee">
-        <el-header>Header</el-header>
+        <el-header>
+            <Headbar />
+        </el-header>
         <el-container>
             <el-aside width="200px" style="background-color: rgb(238, 241, 246)">
-                <el-menu :default-openeds="['1', '3']">
+                <el-menu :default-openeds="['3']">
                 <el-submenu index="1">
                     <template slot="title"><i class="el-icon-message"></i>导航一</template>
                     <el-menu-item-group>
@@ -52,10 +54,13 @@
                 </el-menu>
             </el-aside>
             <el-container>
-                <el-main>Main</el-main>
-                <el-footer>Footer</el-footer>
+                <el-main>
+                  
+                </el-main>
+                
             </el-container>
         </el-container>
+        <el-footer>Footer</el-footer>
     </el-container>
 </template>
 
@@ -65,6 +70,10 @@
     background-color: #B3C0D1;
     color: #333;
     line-height: 60px;
+    padding:0;
+  }
+  .el-footer{
+    padding:0;
   }
   
   .el-aside {
@@ -73,7 +82,11 @@
 </style>
 
 <script>
+  import Headbar from '@/components/HeadBar'
   export default {
+    components:{
+      Headbar
+    },
     data() {
       const item = {
         date: '2016-05-02',

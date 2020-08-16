@@ -6,13 +6,24 @@ Vue.use(VueRouter);
 export default new VueRouter({
     routes: [{
         path: '/',
-        name: 'Container',
+        name: 'Home',
         component: () =>
-            import ('@/components/Container')
+            import ('@/components/Home')
     }, {
-        path: '/Test',
-        name: 'Test',
+        path: '/leave',
+        name: 'leave',
         component: () =>
-            import ('@/components/Test')
+            import ('@/components/Leave')
+    }, {
+        path: '/Error',
+        name: 'Error',
+        component: () =>
+            import ('@/components/Error')
+    }, {
+        path: '/*',
+        name: '*',
+        redirect: '/Error',
+        component: () =>
+            import ('@/components/Error')
     }]
 })

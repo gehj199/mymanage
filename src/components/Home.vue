@@ -1,5 +1,7 @@
 <template>
-  <span>这是测试2</span>
+  <div>
+      首页
+  </div>
 </template>
 
 <script>
